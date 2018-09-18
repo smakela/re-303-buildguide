@@ -5,7 +5,7 @@ sidebar_label: Power supply
 ---
 &nbsp;
 
-<span style="font-size:x-large;">**CARE MUST BE TAKEN WITH THE COIL**</span>
+<p style="text-align: center; font-weight:bold;font-size:large;">CARE MUST BE TAKEN WITH THE COIL</p>
 
 ![alt-text](assets/images/011.jpg)
 
@@ -31,7 +31,7 @@ Now place 4 pins with the long part into the hole in pin locations 1,2,3 and 7 a
 
 &nbsp;
 
-<span style="font-size:x-large;">**DO NOT SOLDER ANYTHING
+<span style="font-size:large;">**DO NOT SOLDER ANYTHING
 TO THE MAIN BOARD YET!**</span>
 
 (we are just using it to hold the pins for us)
@@ -68,6 +68,8 @@ Now place the adaptor on the coil as shown, **ONLY SOLDER ONE LEG** to the adapt
 
 BE SURE TO ALIGN PIN1 OF THE ADAPTOR (first pin in the gap) TO PIN 1 ON THE ADAPTOR (do not align the gap from the pin9 side, as there is an extra support pin next to pin 9 we don't use. It won’t fit directly this way but can be accidentally forced to fit.)
 
+&nbsp;
+
 ![alt-text](assets/images/019.jpg)
 
 **Note the empty hole between pin 1 and pin 9.**
@@ -87,6 +89,8 @@ if it looks like the picture then solder the remaining pins.
 ![alt-text](assets/images/021.jpg)
 
 <p style="text-align: center;">Inspect your work,</p>
+
+&nbsp;
 
 |![alt-text](assets/images/022.jpg)|![alt-text](assets/images/023.jpg)|
 |---|---|
@@ -157,6 +161,8 @@ Without IC16 fitted, connect a 9v DC linear regulated power supply (center pole 
 
 Power on and measure voltage on the socket of IC16 pin 8. Your voltage should be around 15v DC.
 
+&nbsp;
+
 ![alt-text](assets/images/034.jpg)
 
 You can take the ground from one of the jack footprints as shown in the pic.
@@ -169,9 +175,13 @@ Did you turn on the power switch by rotating VR8 fully? Is something placed back
 
 Once you have the correct reading, disconnect the power and place IC16.
 
+&nbsp;
+
 ![alt-text](assets/images/035.jpg)
 
 Reconnect the power supply, turn on the power again and measure from TP5 (this is jumper JP51). Adjust TM6 for 5.333v.
+
+&nbsp;
 
 ![alt-text](assets/images/036.jpg)
 
