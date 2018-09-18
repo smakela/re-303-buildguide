@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Building a dice roll machine · RE-303 Build Guide</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="When Roland made the TB-303 there was not really any thought of audio fidelity. It was more about creating products based on existing technology. There are at least three variants of transistors known to have been used in the short production run. There could have been more, there simply is not enough available data."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Building a dice roll machine · RE-303 Build Guide"/><meta property="og:type" content="website"/><meta property="og:url" content="http://smakela.github.io/re-303-buildguide/index.html"/><meta property="og:description" content="When Roland made the TB-303 there was not really any thought of audio fidelity. It was more about creating products based on existing technology. There are at least three variants of transistors known to have been used in the short production run. There could have been more, there simply is not enough available data."/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/re-303-buildguide/"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><link rel="stylesheet" href="/re-303-buildguide/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/re-303-buildguide/"><h2 class="headerTitle">RE-303 Build Guide</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Build</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Preface</h3><ul><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/preface_greetings">Greetings</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/preface_notes">Background and notes</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Preparation</h3><ul><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/preparation_jacks">Jacks</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/preparation_jumpers">Jumpers</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/preparation_electronic">Electronic parts</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/preparation_pots">Potentiometers</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Build</h3><ul><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_psu">Power supply</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_vco">VCO</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_vcf">VCF</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_envelope">Envelope</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_vca">VCA</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_mixer">Mixer / Headphone output</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_testing_analog_section">Testing analog section</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_digital">Digital section</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_switchboard">Switchboard</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_wiring">Wiring</a></li><li class="navListItem"><a class="navItem" href="/re-303-buildguide/docs/build_calibration">Calibration</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/re-303-buildguide/docs/build_dice_roll">Dice roll</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docMainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Building a dice roll machine</h1></header><article><div><span><p>When Roland made the TB-303 there was not really any thought of audio fidelity. It was more about creating products based on existing technology. There are at least three variants of transistors known to have been used in the short production run. There could have been more, there simply is not enough available data.</p>
+<p>So essentially all TB-303s are dice rolls, the components were not specifically picked, there was no voodoo involved. What this leads to is quite some swing between machines. Over the years many have passed my bench and all sound great but some sound incredible.</p>
+<p>The mother machine that was used to create the RE-303 is a good example of a stock 303, but I also have another (whitey) that just sounds incredible. Why is that? It’s not really totally clear to anyone and it leads to lot of speculation and the inevitable voodoo tricks.</p>
+<p>So I came up with the dice roll concept, you just build your machine and do one tweak.</p>
+<p> </p>
+<p><img src="/re-303-buildguide/docs/assets/images/093.jpg" alt="alt-text"></p>
+<p>220K resistor in parallel with R97</p>
+<p>That’s it? Pretty much, it drives the resonance a bit more and to me it’s that little extra difference you could have between a good 303 and an awesome one from the factory.
+Of course ymmv :-P</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/re-303-buildguide/docs/build_calibration"><span class="arrow-prev">← </span><span>Previous</span></a></div></div></div><nav class="onPageNav docOnPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2018 DinSync.info</section></footer></div></body></html>
