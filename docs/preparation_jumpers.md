@@ -6,10 +6,13 @@ sidebar_label: Jumpers
 
 There are 52 jumpers named JPxx where xx is the number. You can use wire straps, 0 ohm resistors (not recommended for space) or simply old resistor legs.
 
+&nbsp;
+
 |![alt-text](assets/images/003.jpg)|
 |:--:| 
 | *Here’s some I made from resistor legs.* |
 
+&nbsp;
 
 |![alt-text](assets/images/004.jpg)|
 |:--:| 

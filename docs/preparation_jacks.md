@@ -10,6 +10,8 @@ In this section we will add all the jumpers and place a few components that woul
 
 Due to some fluctuations in the production run, some boards may have tighter holes for the 6.3mm jacks. Test fit them, if they fit easily move on and fit the jumpers. If they don’t fit easily do not force them, instead you will need to widen the holes a small amount with a screwdriver.
 
+&nbsp;
+
 |![alt-text](assets/images/001.jpg)|![alt-text](assets/images/002.jpg)|
 |---|---|
 

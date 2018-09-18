@@ -3,7 +3,6 @@ id: preparation_pots
 title: Potentiometers
 sidebar_label: Potentiometers
 ---
-&nbsp;
 
 ![alt-text](assets/images/006.jpg)
 
