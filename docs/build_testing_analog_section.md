@@ -16,7 +16,7 @@ You will need a voltage source to test the gate, this can be taken from IC10 pin
 
 Touch the other end to the south side of R146, you should hear a note play, just like in this instagram video. Test both the audio out and headphone out in this way.
 
-http://www.instagram.com/p/BMjRuHghctM/
+<a href="http://www.instagram.com/p/BMjRuHghctM/" target="_blank">http://www.instagram.com/p/BMjRuHghctM/</a>
   
 If you don’t hear anything then try the other socket (audio out of headphone) If there is no signal at all then there may be a problem with the envelope or the vca.
 

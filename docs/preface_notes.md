@@ -3,7 +3,7 @@ id: preface_notes
 title: A little background and some notes
 sidebar_label: Background and notes
 ---
-This build guide should enable you to build a RE-303, provided you have sourced all the parts in the current version of the BOM. For any updates to this guide please visit [www.re-303.com](http://www.re-303.com)
+This build guide should enable you to build a RE-303, provided you have sourced all the parts in the current version of the BOM. For any updates to this guide please visit <a href="http://www.re-303.com" target="_blank">http://www.re-303.com</a>
 
 The build guide and BOM assume to build the RE-303 with an original NEC processor taken from an original TB-303. This would seem to make the most sense, since we need a known reference build and we are trying to replicate the TB-303.
 
