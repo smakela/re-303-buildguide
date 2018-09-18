@@ -2,6 +2,6 @@
   "docs": {
     "Preface": ["preface_greetings", "preface_notes"],
     "Preparation": ["preparation_jacks", "preparation_jumpers", "preparation_electronic", "preparation_pots"],
-    "Build": ["build_psu", "build_vco", "build_vcf", "build_envelope", "build_vca", "build_mixer", "build_digital", "build_switchboard"]
+    "Build": ["build_psu", "build_vco", "build_vcf", "build_envelope", "build_vca", "build_mixer", "build_testing_analog_section", "build_digital", "build_switchboard"]
   }
 }
