@@ -9,8 +9,9 @@
 // site configuration options.
 
 const siteConfig = {
+  
   title: 'RE-303 Build Guide', // Title for your website.
-  tagline: 'Its not a clone, itss a replica',
+  tagline: 'It\'s not a clone, it\'s a replica',
   url: 'http://smakela.github.io', // Your website URL
   baseUrl: '/re-303-buildguide/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -26,7 +27,6 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { search: true },
   ],
 
   /* path to images for header/footer */
@@ -36,7 +36,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#000000',
+    primaryColor: '#234324',
     secondaryColor: '#000000',
   },
 
@@ -79,6 +79,7 @@ const siteConfig = {
   //   repoUrl: 'https://github.com/facebook/test-site',
 
   scrollToTop: true,
+
 };
 
 module.exports = siteConfig;
