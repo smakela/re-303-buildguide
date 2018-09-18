@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Building the VCO · RE-303 Build Guide</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="One small preparation stage for the VCO, we need to make the two 1K PTC tempco into a single 500R tempco that will fit in the available space."/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Building the VCO · RE-303 Build Guide"/><meta property="og:type" content="website"/><meta property="og:url" content="http://smakela.github.io/re-303-buildguide//index.html"/><meta property="og:description" content="One small preparation stage for the VCO, we need to make the two 1K PTC tempco into a single 500R tempco that will fit in the available space."/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><link rel="stylesheet" href="/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><h2 class="headerTitle">RE-303 Build Guide</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a target="_self"></a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Build</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Preface</h3><ul><li class="navListItem"><a class="navItem" href="/docs/preface_greetings">Greetings</a></li><li class="navListItem"><a class="navItem" href="/docs/preface_notes">Background and notes</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Preparation</h3><ul><li class="navListItem"><a class="navItem" href="/docs/preparation_jacks">Jacks</a></li><li class="navListItem"><a class="navItem" href="/docs/preparation_jumpers">Jumpers</a></li><li class="navListItem"><a class="navItem" href="/docs/preparation_electronic">Electronic parts</a></li><li class="navListItem"><a class="navItem" href="/docs/preparation_pots">Potentiometers</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Build</h3><ul><li class="navListItem"><a class="navItem" href="/docs/build_psu">Power supply</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/build_vco">VCO</a></li><li class="navListItem"><a class="navItem" href="/docs/build_vcf">VCF</a></li><li class="navListItem"><a class="navItem" href="/docs/build_envelope">Envelope</a></li><li class="navListItem"><a class="navItem" href="/docs/build_vca">VCA</a></li><li class="navListItem"><a class="navItem" href="/docs/build_mixer">Mixer / Headphone output</a></li><li class="navListItem"><a class="navItem" href="/docs/build_digital">Digital section</a></li><li class="navListItem"><a class="navItem" href="/docs/build_switchboard">Switchboard</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docMainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Building the VCO</h1></header><article><div><span><p>One small preparation stage for the VCO, we need to make the two 1K PTC tempco into a single 500R tempco that will fit in the available space.
+Form the parts as shown and solder each side.
+Trim the outer legs so that we end up with essentially a “tall” part ready for fitting.</p>
+<p>Fit the resistors and the tempco.
+Fit the diodes and the poly capacitors.
+Fit the electrolytic capacitors.
+Fit the transistors. (and IC sockets if you are using them)
+Place the trimmers and inspect your work so far, if you are satisfied everything looks ok then place the IC ́s, VR2 and the waveform switch.
+Double check everything as it’s time to test the oscillator.
+The picture shows me reading the square waveform from Q8 pin 2
+Hook up the power as before. There are various places to measure the oscillator waveforms but perhaps the easiest is the center pole of the fitted waveform switch.
+Set your scope to AC, 2v, 10ms and measure at the center pole of the switch, if you don’t see a waveform at this time you may need to ground the DAC to start the oscillator. You can do this by connecting the right side of R90 to ground.
+If the oscillator fails to run, check your measurements are correct, check that you grounded R90. Check for solder shorts, or missing or misplaced parts. Check the power section is still ok.
+Do not proceed until the oscillator is working as it will be more difficult to solve with a fully populated board.
+If the oscillator runs, try turning VR2 and watch the frequency changes, switch the waveform switch and you should see either a saw or that special 303 square. If everything looks good, congratulations it’s time to build the filter.</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/build_psu"><span class="arrow-prev">← </span><span>Previous</span></a><a class="docs-next button" href="/docs/build_vcf"><span>Next</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav docOnPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2018 DinSync.info</section></footer></div></body></html>
